@@ -11,10 +11,10 @@ public class __2TwoSum {
         int si = 0;
         int ei = arr.length-1;
         while(si<ei){
-            // if(si!=0 && arr[si]==arr[si-1]){
-            //     si++;
-            //     continue;
-            // }
+            if(si!=0 && arr[si]==arr[si-1]){
+                si++;
+                continue;
+            }
 
             if(arr[si]+arr[ei] == target){
                 list = new ArrayList<>();
